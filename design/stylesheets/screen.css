@@ -1008,22 +1008,38 @@ h1, h2 {
   background-image: -o-linear-gradient(left top, #0066cc, #4da6ff);
   background-image: linear-gradient(left top, #0066cc, #4da6ff);
   position: absolute;
-  left: -39px;
-  top: 28px;
-  width: 174px;
+  left: -61px;
+  top: 26px;
+  width: 254px;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
+  text-align: center;
 }
-/* line 211, ../sass/_launch.scss */
+/* line 212, ../sass/_launch.scss */
 .launch-footer p {
-  color: #fff;
+  color: #FFFFFF;
   font-size: 1.5em;
+  padding: 7px 0 2px;
   text-align: center;
-  padding: 10px 0;
-  text-align: center;
+}
+/* line 219, ../sass/_launch.scss */
+.launch-footer span {
+  color: #FFFFFF;
+  display: block;
+  font-size: 1.2em;
+  font-style: italic;
+  margin: 0 0 1px;
+}
+/* line 225, ../sass/_launch.scss */
+.launch-footer span a {
+  color: #fff;
+}
+/* line 228, ../sass/_launch.scss */
+.launch-footer span:last-child {
+  margin: 0 0 3px;
 }
 
 /* line 4, ../sass/_popup.scss */
@@ -1286,4 +1302,13 @@ h1, h2 {
 .awards .award-low .number {
   color: #fff;
   background: gold;
+}
+
+/* line 5, ../sass/_link-page.scss */
+.link-page .cube2 .cube-text {
+  top: 77px;
+}
+/* line 7, ../sass/_link-page.scss */
+.link-page .cube2 .cube-text p {
+  text-align: center;
 }

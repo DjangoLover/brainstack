@@ -1,24 +1,18 @@
 $(function(){
   
   // SHOW/HIDE POPUP CREATE TASK
-//(function() {
-//    var popup = $('.js-popup-task-add'),
-//        showPopup = $('.js-task-add');
-//        //close = popup.find('.popup-close');
-//        
-//    showPopup.click('live', function(e) {
-//      popup.hide();       
-//      //popup.fadeIn('slow');
-//      popup.animate({ height: "show"}, 500, function() {});
-//      
-//      e.preventDefault();    
-//    });
-//
-//    /*close.click('live', function(e) {
-//      popup.hide();   
-//      e.preventDefault();    
-//    });*/
-//  })();
+  (function() {
+    var popup = $('.js-popup-task-add'),
+        showPopup = $('.js-task-add');
+        
+    showPopup.on('click',function(e) {
+      popup.hide();       
+      //popup.fadeIn('slow');
+      popup.animate({ height: "show"}, 500, function() {});
+      
+      e.preventDefault();    
+    });
+  })();
   
   //CHECKBOX
   (function(){
@@ -38,7 +32,7 @@ $(function(){
         $(unchecked).show();
       }
       
-      $(checked).on('click',function(e){
+      $(checked).on('click', function(e){
         $(this).hide();
         $(unchecked).show();
         $(input).attr('checked', null);
@@ -60,8 +54,8 @@ $(function(){
   (function() {
     var taskDesc = $('.js-task-desc'),
         toggleDesc= $('.js-toggle-task-desc');
-    toggleDesc.click(function(e){
-      //$(taskDesc).hide();
+        
+    toggleDesc.on('click', function(e){
       $(this).closest('.task-item').find('.js-task-desc').animate({ height: "toggle"}, 500, function() {});
       e.preventDefault(); 
     });
@@ -74,12 +68,12 @@ $(function(){
         close = popup.find('.popup-close'),
         outside = $(popup).find('.popup-overlay');
         
-    showPopup.click('live', function(e) {
+    showPopup.on('click',function(e) {
       popup.fadeIn('fast');
       e.preventDefault();    
     });
   
-    $(document).keydown(function(e) {
+    $(document).on('keydown', function(e) {
       if (e.which == 27) {
          popup.hide();   
       } else {
@@ -88,12 +82,12 @@ $(function(){
       e.preventDefault();   
     });
     
-    outside.click('live', function(e) {
+    outside.on('click', function(e) {
       popup.hide();   
       e.preventDefault();    
     });
     
-    close.click('live', function(e) {
+    close.on('click', function(e) {
       popup.hide();   
       e.preventDefault();    
     });

@@ -34,14 +34,13 @@
           <i class="cube-cover"></i>
           <i class="cube-shadow"></i>
           <div class="cube-text">
-            <form action="./">
-              <label for="username">Add username</label>
-              <input type="text" id="username" placeholder="username">
-              <label for="project-name">Add name of projects</label>
-              <input type="text" id="project-name" placeholder="project name">
-              <input type="submit" value="create project" class="btn-project-create">
+            <form action="." method="post">{% csrf_token %}
+                <label for="id_username">Add username</label>
+                <input id="id_username" maxlength="255" name="username" placeholder="username" type="text">
+                <label for="id_title">Add name of projects</label>
+                <input id="id_title" maxlength="255" name="title" placeholder="project name" type="text">
+                <input type="submit" value="create projcet" class="btn-project-create">
             </form>
-
           </div>
           <i class="cube-border"></i>
         </div>

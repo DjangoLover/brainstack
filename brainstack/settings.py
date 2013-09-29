@@ -25,8 +25,8 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3', 
-        'NAME': ':memory',                      
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': ':memory',
         'USER': '',
         'PASSWORD': '',
         'HOST': '',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
@@ -135,6 +135,7 @@ INSTALLED_APPS = (
     'django_nose',
     'rest_framework',
     'south',
+    'django_extensions',
     # own
     'api',
     'core',

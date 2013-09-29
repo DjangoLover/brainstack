@@ -204,16 +204,30 @@
 .launch-footer {
   @include background-image(linear-gradient(left top,#0066CC,lighten(#0066CC, 25%)));
   position: absolute;
-  left: -39px;
-  top: 28px;
-  width: 174px;
+  left: -61px;
+  top: 26px;
+  width: 254px;
    @include transform(rotate(-45deg));
-  p {
-    color: #fff;
-    font-size: 1.5em;
     text-align: center;
-    padding: 10px 0;
-        text-align: center;
+  p {
+    color: #FFFFFF;
+       font-size: 1.5em;
+       padding: 7px 0 2px;
+       text-align: center;
+       
+  }
+  span {
+    color: #FFFFFF;
+        display: block;
+        font-size: 1.2em;
+        font-style: italic;
+        margin: 0 0 1px;
+        a {
+          color: #fff;
+        }
+        &:last-child {
+          margin: 0 0 3px;
+        }
   }
   
 }

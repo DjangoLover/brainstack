@@ -62,6 +62,8 @@
     {% endblock footer %}
   </div>
 </footer>
+
+<a href="{% url 'logout' %}">logout</a>
 {% block js %}
   <script src="{% static 'js/third_party/jquery-1.9.0.js' %}"></script>
 {% endblock js %}
