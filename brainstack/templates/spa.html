@@ -18,25 +18,25 @@
     <section>
     <div class="wrapper">
         
-        <div class="task-wrap">
+        <div class="task-wrap" id='task-deck'>
             <h2>BrainStack</h2>
-            <div class="btn-wrap"><a class="js-task-add task-add" href="#" data-popup="task-add"> create new task</a></div>
             
+            <div class="btn-wrap"><a id="js-open-popup-add" class="js-task-add task-add" href="#" data-popup="task-add"> create new task</a></div>
             <div class="js-popup-task-add popup-task-add" data-popup="task-add">
                 <div class="wrap">
-                    <form action="./">
-                    <label for="task-name">Enter name for task</label>
-                    <input id="task-name" type="text" palceholder="Enter name for task">
-                
-                    <label for="task-desc">Enter name for task description</label>
-                    <textarea id="task-desc" cols="30" rows="4" value="Enter name for task description"></textarea>
+                    <form id='js-form'>
+                        <label for="task-name">Enter name for task</label>
+                        <input id="task-name" type="text" name="a" palceholder="Enter name for task">
                     
-                    <div class="btn-wrap"><a class="task-add" href="#"> enter</a></div>
-                    
+                        <label for="task-desc">Enter name for task description</label>
+                        <textarea id="task-desc" name="b" cols="30" rows="4" value="Enter name for task description"></textarea>
+                        
+                        <div class="btn-wrap"><a id='js-task-add' class="task-add" href="#"> enter</a></div>
                     </form>
                 </div> 
             </div>
-            <div class="task-table" id="task-deck">
+
+            <div class="task-table" id="task-list">
             <div>
             
         </div>   

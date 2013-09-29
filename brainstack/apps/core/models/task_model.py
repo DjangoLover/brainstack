@@ -26,7 +26,8 @@ class Task(models.Model):
     updated = models.DateTimeField(auto_now=True)
     start_date_time = models.DateTimeField(blank=True, null=True)
     executor = models.ForeignKey(Participation, blank=True, null=True)
-    priority = models.PositiveIntegerField(_('priority'), choices=PRIORITY,
+    priority = models.PositiveIntegerField(
+        _('priority'), choices=PRIORITY,
         default=PRIORITY.NORMAL)
     created_by = models.ForeignKey(UserProfile, related_name='created_task')
 

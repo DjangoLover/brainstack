@@ -1,24 +1,24 @@
 $(function(){
   
   // SHOW/HIDE POPUP CREATE TASK
-  (function() {
-    var popup = $('.js-popup-task-add'),
-        showPopup = $('.js-task-add');
-        //close = popup.find('.popup-close');
-        
-    showPopup.click('live', function(e) {
-      popup.hide();       
-      //popup.fadeIn('slow');
-      popup.animate({ height: "show"}, 500, function() {});
-      
-      e.preventDefault();    
-    });
-
-    /*close.click('live', function(e) {
-      popup.hide();   
-      e.preventDefault();    
-    });*/
-  })();
+//(function() {
+//    var popup = $('.js-popup-task-add'),
+//        showPopup = $('.js-task-add');
+//        //close = popup.find('.popup-close');
+//        
+//    showPopup.click('live', function(e) {
+//      popup.hide();       
+//      //popup.fadeIn('slow');
+//      popup.animate({ height: "show"}, 500, function() {});
+//      
+//      e.preventDefault();    
+//    });
+//
+//    /*close.click('live', function(e) {
+//      popup.hide();   
+//      e.preventDefault();    
+//    });*/
+//  })();
   
   //CHECKBOX
   (function(){
